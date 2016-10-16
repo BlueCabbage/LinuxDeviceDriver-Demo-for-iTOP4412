@@ -1,0 +1,50 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+DEVICE_NAME	char_dev_leds.c	35;"	d	file:
+DEV_MAJOR	char_dev_leds.c	38;"	d	file:
+DEV_MINOR	char_dev_leds.c	42;"	d	file:
+DEV_MINOR_NUM	char_dev_leds.c	45;"	d	file:
+DRIVER_NAME	char_dev_leds.c	34;"	d	file:
+KDIR	Makefile	/^KDIR := ..\/..\/ITOP4412_linux_Kernel_3.0\/iTop4412_Kernel_3.0$/;"	m
+LOCAL_CC	Makefile	/^LOCAL_CC := arm-none-linux-gnueabi-gcc$/;"	m
+PWD	Makefile	/^PWD ?= $(shell pwd)$/;"	m
+REGDEV_SIZE	char_dev_leds.c	48;"	d	file:
+__this_module	char_dev_leds.mod.c	/^struct module __this_module$/;"	v	typeref:struct:module
+__used	char_dev_leds.mod.c	/^__used$/;"	v	file:
+cdat	char_dev_leds.c	/^	char *cdat;$/;"	m	struct:reg_dev	file:	access:public
+cdev	char_dev_leds.c	/^	struct cdev cdev;$/;"	m	struct:reg_dev	typeref:struct:reg_dev::cdev	file:	access:public
+char_dev_leds_ops	char_dev_leds.c	/^static struct file_operations char_dev_leds_ops = {$/;"	v	typeref:struct:file_operations	file:
+char_node_leds_ops_ioctl	char_dev_leds.c	/^static long char_node_leds_ops_ioctl(struct file *file, unsigned int cmd, unsigned long arg)$/;"	f	file:	signature:(struct file *file, unsigned int cmd, unsigned long arg)
+char_node_leds_ops_llseek	char_dev_leds.c	/^ssize_t char_node_leds_ops_llseek(struct file *file, loff_t offset, int ence) $/;"	f	signature:(struct file *file, loff_t offset, int ence)
+char_node_leds_ops_open	char_dev_leds.c	/^static int char_node_leds_ops_open(struct inode *inode, struct file *file) $/;"	f	file:	signature:(struct inode *inode, struct file *file)
+char_node_leds_ops_read	char_dev_leds.c	/^ssize_t char_node_leds_ops_read(struct file *file, char __user *buf, size_t count, loff_t *f_ops) $/;"	f	signature:(struct file *file, char __user *buf, size_t count, loff_t *f_ops)
+char_node_leds_ops_release	char_dev_leds.c	/^static int char_node_leds_ops_release(struct inode *inode, struct file *file) $/;"	f	file:	signature:(struct inode *inode, struct file *file)
+char_node_leds_ops_write	char_dev_leds.c	/^ssize_t char_node_leds_ops_write(struct file *file, char __user *buf, size_t count, loff_t *f_ops)$/;"	f	signature:(struct file *file, char __user *buf, size_t count, loff_t *f_ops)
+dev_major	char_dev_leds.c	/^int dev_major = DEV_MAJOR;$/;"	v
+dev_minor	char_dev_leds.c	/^int dev_minor = DEV_MINOR;$/;"	v
+gpio_init	char_dev_leds.c	/^static void gpio_init(void)$/;"	f	file:	signature:(void)
+idat	char_dev_leds.c	/^	int  idat;$/;"	m	struct:reg_dev	file:	access:public
+leds_driver_plt	char_dev_leds.c	/^struct platform_driver leds_driver_plt = {$/;"	v	typeref:struct:platform_driver
+leds_exit	char_dev_leds.c	/^module_exit(leds_exit);$/;"	v
+leds_exit	char_dev_leds.c	/^static void leds_exit(void)$/;"	f	file:	signature:(void)
+leds_init	char_dev_leds.c	/^module_init(leds_init);$/;"	v
+leds_init	char_dev_leds.c	/^static int leds_init(void)$/;"	f	file:	signature:(void)
+leds_plt_probe	char_dev_leds.c	/^static int leds_plt_probe(struct platform_device *pdv) $/;"	f	file:	signature:(struct platform_device *pdv)
+leds_plt_remove	char_dev_leds.c	/^static int leds_plt_remove(struct platform_device *pdev)$/;"	f	file:	signature:(struct platform_device *pdev)
+leds_plt_resume	char_dev_leds.c	/^static int leds_plt_resume(struct platform_device *pdev) $/;"	f	file:	signature:(struct platform_device *pdev)
+leds_plt_shutdown	char_dev_leds.c	/^static int leds_plt_shutdown(struct platform_device *pdev)$/;"	f	file:	signature:(struct platform_device *pdev)
+leds_plt_suspend	char_dev_leds.c	/^static int leds_plt_suspend(struct platform_device *pdev, pm_message_t pmt) $/;"	f	file:	signature:(struct platform_device *pdev, pm_message_t pmt)
+main	leds_invoke.c	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+myClass	char_dev_leds.c	/^static struct class *myClass;$/;"	v	typeref:struct:class	file:
+myDev	char_dev_leds.c	/^static struct reg_dev *myDev;$/;"	v	typeref:struct:reg_dev	file:
+reg_dev	char_dev_leds.c	/^struct reg_dev {$/;"	s	file:
+reg_dev::cdat	char_dev_leds.c	/^	char *cdat;$/;"	m	struct:reg_dev	file:	access:public
+reg_dev::cdev	char_dev_leds.c	/^	struct cdev cdev;$/;"	m	struct:reg_dev	typeref:struct:reg_dev::cdev	file:	access:public
+reg_dev::idat	char_dev_leds.c	/^	int  idat;$/;"	m	struct:reg_dev	file:	access:public
+reg_dev::size	char_dev_leds.c	/^	unsigned long size;$/;"	m	struct:reg_dev	file:	access:public
+reg_init_cdev	char_dev_leds.c	/^static void reg_init_cdev(struct reg_dev *dev, int index)$/;"	f	file:	signature:(struct reg_dev *dev, int index)
+size	char_dev_leds.c	/^	unsigned long size;$/;"	m	struct:reg_dev	file:	access:public

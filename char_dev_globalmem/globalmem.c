@@ -17,7 +17,7 @@
 #include <linux/uaccess.h>
 
 #define GLOBALMEM_SIZE		0x1000
-#define MEM_CLEAR			0X01
+#define MEM_CLEAR			0x01
 #define GLOBALMEM_MAJOR		230
 
 static int globalmem_major = GLOBALMEM_MAJOR;
@@ -184,6 +184,8 @@ static int __init globalmem_init(void)
 	int ret;
 	dev_t devno = MKDEV(globalmem_major, 0);
 
+	printk(KERN_INFO "Init ... \n");
+
 	if (globalmem_major) {
 		ret = register_chrdev_region(devno, 1, "globalmem");
 	} else {
@@ -203,6 +205,8 @@ static int __init globalmem_init(void)
 
 	globalmem_setup_cdev(globalmem_devp, 0);
 
+	printk(KERN_INFO "Inited! \n");
+
 	return 0;
 
 fail_malloc:
@@ -215,9 +219,12 @@ module_init(globalmem_init);
 
 static void __exit globalmem_exit(void)
 {
+	printk(KERN_INFO "exit ... \n");
 	cdev_del(&globalmem_devp->cdev);
 	kfree(globalmem_devp);
 	unregister_chrdev_region(MKDEV(globalmem_major, 0), 1);
+
+	printk(KERN_INFO "exited!\n");
 }
 
 module_exit(globalmem_exit);

@@ -1,2 +1,2 @@
-/home/zhaochao/Desktop/ITOP4412/LinuxDeviceDrvier/globalmem/globalmem.ko
-/home/zhaochao/Desktop/ITOP4412/LinuxDeviceDrvier/globalmem/globalmem.o
+/home/zhaochao/Desktop/ITOP4412/LinuxDeviceDrvier/char_dev_globalmem/globalmem.ko
+/home/zhaochao/Desktop/ITOP4412/LinuxDeviceDrvier/char_dev_globalmem/globalmem.o

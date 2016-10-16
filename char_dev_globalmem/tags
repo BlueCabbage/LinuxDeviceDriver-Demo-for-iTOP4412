@@ -1,0 +1,33 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+GLOBALMEM_MAJOR	globalmem.c	21;"	d	file:
+GLOBALMEM_SIZE	globalmem.c	19;"	d	file:
+KDIR	Makefile	/^KDIR := ..\/..\/ITOP4412_linux_Kernel_3.0\/iTop4412_Kernel_3.0$/;"	m
+LOCAL_CC	Makefile	/^LOCAL_CC := arm-none-linux-gnueabi-gcc$/;"	m
+MEM_CLEAR	globalmem.c	20;"	d	file:
+PWD	Makefile	/^PWD ?= $(shell pwd)$/;"	m
+__this_module	globalmem.mod.c	/^struct module __this_module$/;"	v	typeref:struct:module
+__used	globalmem.mod.c	/^__used$/;"	v	file:
+cdev	globalmem.c	/^	struct cdev cdev;$/;"	m	struct:globalmem_dev	typeref:struct:globalmem_dev::cdev	file:	access:public
+globalmem_dev	globalmem.c	/^struct globalmem_dev { $/;"	s	file:
+globalmem_dev::cdev	globalmem.c	/^	struct cdev cdev;$/;"	m	struct:globalmem_dev	typeref:struct:globalmem_dev::cdev	file:	access:public
+globalmem_dev::mem	globalmem.c	/^	unsigned char mem[GLOBALMEM_SIZE];$/;"	m	struct:globalmem_dev	file:	access:public
+globalmem_devp	globalmem.c	/^struct globalmem_dev *globalmem_devp;$/;"	v	typeref:struct:globalmem_dev
+globalmem_exit	globalmem.c	/^module_exit(globalmem_exit);$/;"	v
+globalmem_exit	globalmem.c	/^static void __exit globalmem_exit(void)$/;"	f	file:	signature:(void)
+globalmem_fops	globalmem.c	/^static const struct file_operations globalmem_fops = {$/;"	v	typeref:struct:file_operations	file:
+globalmem_init	globalmem.c	/^module_init(globalmem_init);$/;"	v
+globalmem_init	globalmem.c	/^static int __init globalmem_init(void)$/;"	f	file:	signature:(void)
+globalmem_ioctl	globalmem.c	/^static long globalmem_ioctl(struct file *filp, unsigned int cmd, unsigned long arg) $/;"	f	file:	signature:(struct file *filp, unsigned int cmd, unsigned long arg)
+globalmem_llseek	globalmem.c	/^static ssize_t globalmem_llseek(struct file *filp, loff_t offset, int orig)$/;"	f	file:	signature:(struct file *filp, loff_t offset, int orig)
+globalmem_major	globalmem.c	/^static int globalmem_major = GLOBALMEM_MAJOR;$/;"	v	file:
+globalmem_open	globalmem.c	/^static int globalmem_open(struct inode *inode, struct file *filp) $/;"	f	file:	signature:(struct inode *inode, struct file *filp)
+globalmem_read	globalmem.c	/^static ssize_t globalmem_read(struct file *filp, char __user *buf, size_t size, loff_t *ppos) $/;"	f	file:	signature:(struct file *filp, char __user *buf, size_t size, loff_t *ppos)
+globalmem_release	globalmem.c	/^static int globalmem_release(struct inode *inode, struct file *filp)$/;"	f	file:	signature:(struct inode *inode, struct file *filp)
+globalmem_setup_cdev	globalmem.c	/^static void globalmem_setup_cdev(struct globalmem_dev *dev, int index) $/;"	f	file:	signature:(struct globalmem_dev *dev, int index)
+globalmem_write	globalmem.c	/^static ssize_t globalmem_write(struct file *filp, const char __user *buf, size_t size, loff_t *ppos)$/;"	f	file:	signature:(struct file *filp, const char __user *buf, size_t size, loff_t *ppos)
+mem	globalmem.c	/^	unsigned char mem[GLOBALMEM_SIZE];$/;"	m	struct:globalmem_dev	file:	access:public

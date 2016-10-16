@@ -1,8 +1,9 @@
-cmd_/home/zhaochao/Desktop/ITOP4412/LinuxDeviceDrvier/char_dev_globalmem/globalmem.o := arm-none-linux-gnueabi-gcc -Wp,-MD,/home/zhaochao/Desktop/ITOP4412/LinuxDeviceDrvier/char_dev_globalmem/.globalmem.o.d  -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -I/home/zhaochao/Desktop/ITOP4412/ITOP4412_linux_Kernel_3.0/iTop4412_Kernel_3.0/arch/arm/include -Iarch/arm/include/generated -Iinclude  -include include/generated/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-exynos/include -Iarch/arm/plat-s5p/include -Iarch/arm/plat-samsung/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -mtune=cortex-a9 -march=armv7-a -mfpu=neon -O2 -marm -fno-dwarf2-cfi-asm -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mabi=aapcs-linux -mno-thumb-interwork -D__LINUX_ARM_ARCH__=7 -march=armv7-a -msoft-float -Uarm -Wframe-larger-than=1024 -fno-stack-protector -fno-omit-frame-pointer -fno-optimize-sibling-calls -g -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack  -DMODULE -fno-pic -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(globalmem)"  -D"KBUILD_MODNAME=KBUILD_STR(globalmem)" -c -o /home/zhaochao/Desktop/ITOP4412/LinuxDeviceDrvier/char_dev_globalmem/globalmem.o /home/zhaochao/Desktop/ITOP4412/LinuxDeviceDrvier/char_dev_globalmem/globalmem.c
+cmd_/home/zhaochao/Desktop/ITOP4412/LinuxDeviceDrvier/char_dev_leds/char_dev_leds.mod.o := arm-none-linux-gnueabi-gcc -Wp,-MD,/home/zhaochao/Desktop/ITOP4412/LinuxDeviceDrvier/char_dev_leds/.char_dev_leds.mod.o.d  -nostdinc -isystem /opt/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/include -I/home/zhaochao/Desktop/ITOP4412/ITOP4412_linux_Kernel_3.0/iTop4412_Kernel_3.0/arch/arm/include -Iarch/arm/include/generated -Iinclude  -include include/generated/autoconf.h -D__KERNEL__ -mlittle-endian -Iarch/arm/mach-exynos/include -Iarch/arm/plat-s5p/include -Iarch/arm/plat-samsung/include -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -fno-delete-null-pointer-checks -mtune=cortex-a9 -march=armv7-a -mfpu=neon -O2 -marm -fno-dwarf2-cfi-asm -fno-omit-frame-pointer -mapcs -mno-sched-prolog -mabi=aapcs-linux -mno-thumb-interwork -D__LINUX_ARM_ARCH__=7 -march=armv7-a -msoft-float -Uarm -Wframe-larger-than=1024 -fno-stack-protector -fno-omit-frame-pointer -fno-optimize-sibling-calls -g -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(char_dev_leds.mod)"  -D"KBUILD_MODNAME=KBUILD_STR(char_dev_leds)" -DMODULE -fno-pic -c -o /home/zhaochao/Desktop/ITOP4412/LinuxDeviceDrvier/char_dev_leds/char_dev_leds.mod.o /home/zhaochao/Desktop/ITOP4412/LinuxDeviceDrvier/char_dev_leds/char_dev_leds.mod.c
 
-source_/home/zhaochao/Desktop/ITOP4412/LinuxDeviceDrvier/char_dev_globalmem/globalmem.o := /home/zhaochao/Desktop/ITOP4412/LinuxDeviceDrvier/char_dev_globalmem/globalmem.c
+source_/home/zhaochao/Desktop/ITOP4412/LinuxDeviceDrvier/char_dev_leds/char_dev_leds.mod.o := /home/zhaochao/Desktop/ITOP4412/LinuxDeviceDrvier/char_dev_leds/char_dev_leds.mod.c
 
-deps_/home/zhaochao/Desktop/ITOP4412/LinuxDeviceDrvier/char_dev_globalmem/globalmem.o := \
+deps_/home/zhaochao/Desktop/ITOP4412/LinuxDeviceDrvier/char_dev_leds/char_dev_leds.mod.o := \
+    $(wildcard include/config/module/unload.h) \
   include/linux/module.h \
     $(wildcard include/config/symbol/prefix.h) \
     $(wildcard include/config/sysfs.h) \
@@ -16,7 +17,6 @@ deps_/home/zhaochao/Desktop/ITOP4412/LinuxDeviceDrvier/char_dev_globalmem/global
     $(wildcard include/config/tracing.h) \
     $(wildcard include/config/event/tracing.h) \
     $(wildcard include/config/ftrace/mcount/record.h) \
-    $(wildcard include/config/module/unload.h) \
     $(wildcard include/config/constructors.h) \
     $(wildcard include/config/debug/set/module/ronx.h) \
   include/linux/list.h \
@@ -350,73 +350,9 @@ deps_/home/zhaochao/Desktop/ITOP4412/LinuxDeviceDrvier/char_dev_globalmem/global
     $(wildcard include/config/arm/unwind.h) \
   include/trace/events/module.h \
   include/trace/define_trace.h \
-  include/linux/fs.h \
-    $(wildcard include/config/security.h) \
-    $(wildcard include/config/quota.h) \
-    $(wildcard include/config/fsnotify.h) \
-    $(wildcard include/config/ima.h) \
-    $(wildcard include/config/fs/posix/acl.h) \
-    $(wildcard include/config/epoll.h) \
-    $(wildcard include/config/debug/writecount.h) \
-    $(wildcard include/config/file/locking.h) \
-    $(wildcard include/config/smm6260/modem.h) \
-    $(wildcard include/config/use/gpio/as/i2c.h) \
-    $(wildcard include/config/auditsyscall.h) \
-    $(wildcard include/config/block.h) \
-    $(wildcard include/config/fs/xip.h) \
-    $(wildcard include/config/migration.h) \
-  include/linux/limits.h \
-  include/linux/ioctl.h \
-  /home/zhaochao/Desktop/ITOP4412/ITOP4412_linux_Kernel_3.0/iTop4412_Kernel_3.0/arch/arm/include/asm/ioctl.h \
-  include/asm-generic/ioctl.h \
-  include/linux/blk_types.h \
-    $(wildcard include/config/blk/dev/integrity.h) \
-  include/linux/kdev_t.h \
-  include/linux/dcache.h \
-  include/linux/rculist.h \
-  include/linux/rculist_bl.h \
-  include/linux/list_bl.h \
-  include/linux/bit_spinlock.h \
-  include/linux/path.h \
-  include/linux/radix-tree.h \
-  include/linux/prio_tree.h \
-  include/linux/pid.h \
-  include/linux/capability.h \
-  include/linux/semaphore.h \
-  include/linux/fiemap.h \
-  include/linux/quota.h \
-    $(wildcard include/config/quota/netlink/interface.h) \
-  include/linux/percpu_counter.h \
-  include/linux/dqblk_xfs.h \
-  include/linux/dqblk_v1.h \
-  include/linux/dqblk_v2.h \
-  include/linux/dqblk_qtree.h \
-  include/linux/nfs_fs_i.h \
-  include/linux/nfs.h \
-  include/linux/sunrpc/msg_prot.h \
-  include/linux/inet.h \
-  include/linux/fcntl.h \
-  /home/zhaochao/Desktop/ITOP4412/ITOP4412_linux_Kernel_3.0/iTop4412_Kernel_3.0/arch/arm/include/asm/fcntl.h \
-  include/asm-generic/fcntl.h \
-  include/linux/err.h \
-  include/linux/cdev.h \
-  include/linux/slab.h \
-    $(wildcard include/config/slab/debug.h) \
-    $(wildcard include/config/failslab.h) \
-    $(wildcard include/config/slub.h) \
-    $(wildcard include/config/slob.h) \
-    $(wildcard include/config/debug/slab.h) \
-    $(wildcard include/config/slab.h) \
-  include/linux/slub_def.h \
-    $(wildcard include/config/slub/stats.h) \
-    $(wildcard include/config/slub/debug.h) \
-  include/linux/kmemleak.h \
-    $(wildcard include/config/debug/kmemleak.h) \
-  include/linux/uaccess.h \
-  /home/zhaochao/Desktop/ITOP4412/ITOP4412_linux_Kernel_3.0/iTop4412_Kernel_3.0/arch/arm/include/asm/uaccess.h \
-  /home/zhaochao/Desktop/ITOP4412/ITOP4412_linux_Kernel_3.0/iTop4412_Kernel_3.0/arch/arm/include/asm/unified.h \
-    $(wildcard include/config/arm/asm/unified.h) \
+  include/linux/vermagic.h \
+  include/generated/utsrelease.h \
 
-/home/zhaochao/Desktop/ITOP4412/LinuxDeviceDrvier/char_dev_globalmem/globalmem.o: $(deps_/home/zhaochao/Desktop/ITOP4412/LinuxDeviceDrvier/char_dev_globalmem/globalmem.o)
+/home/zhaochao/Desktop/ITOP4412/LinuxDeviceDrvier/char_dev_leds/char_dev_leds.mod.o: $(deps_/home/zhaochao/Desktop/ITOP4412/LinuxDeviceDrvier/char_dev_leds/char_dev_leds.mod.o)
 
-$(deps_/home/zhaochao/Desktop/ITOP4412/LinuxDeviceDrvier/char_dev_globalmem/globalmem.o):
+$(deps_/home/zhaochao/Desktop/ITOP4412/LinuxDeviceDrvier/char_dev_leds/char_dev_leds.mod.o):

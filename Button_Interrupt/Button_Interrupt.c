@@ -133,11 +133,13 @@ struct platform_driver key_irq_plt_driver = {
 	},
 };
 
-static void __init key_irq_init(void)
+static int __init key_irq_init(void)
 {
 	printk(KERN_INFO "init ... \n");
 	platform_driver_register(&key_irq_plt_driver);
 	printk(KERN_INFO "inited ... \n");
+
+	return 0;
 }
 
 module_init(key_irq_init);
